@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблиця</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="routes-title">Маршрути</h1>
+
+        <ul class="routes-list">
+          <li class="route" data-route="firstRoute">З Харкова</li>
+          <li class="route" data-route="secondRoute">З Києва</li>
+          <li class="route" data-route="thirdRoute">Зі Львова</li>
+          <li class="route" data-route="fourthRoute">З Одеси</li>
+          <li class="route" data-route="fifthRoute">З Чернігова</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="table-title">Перелік маршрутів за обраним напрямком</h2>
+
+        <table class="travelRoute-table js-travelRoute-table">
+          <thead>
+            <tr>
+              <th>Напрямок</th>
+              <th>Транспорт</th>
+              <th>Відстань</th>
+              <th>Вартість проїзду</th>
+              <th>Вартість екскурсії</th>
+              <th>Послуги гіда</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </section>
+
+    <script src="./routes.js" type="module"></script>
+  </body>
+</html>

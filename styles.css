@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+html,body {
+    font-size: 18px;
+}
+
+.container {
+max-width: 1200px;
+margin: 30px auto;
+/* background: #f1f1f1; */
+padding: 30px;
+}
+
+.travelRoute-table {
+    border-collapse: collapse;
+}
+
+.travelRoute-table th,
+.travelRoute-table td {
+    width: 150px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.routes-title {
+    margin-bottom: 30px;
+}
+
+.routes-list {
+    display: flex;
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+
+    padding: 10px 0;
+
+    border: 1px solid #212121;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.route:not(:last-child) {
+    margin-right: 20px;
+}
+
+.table-title {
+    margin-bottom: 30px;
+}
