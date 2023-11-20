@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Маршрути</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="main-nav">
+          <a href="/" class="logo-link">
+            <img src="./img/icon-travel.png" alt="логотип" width="64"
+          /></a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-item-link" href="./index.html">Головна</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link current" href="./routes.html"
+                >Маршрути</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="./about.html">Про нас</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li><a href="tel:+3806666666666">+380 66 666 6666</a></li>
+          <li>
+            <a href="mailto:info@ukr-travel.com.ua">info@ukr-travel.com.ua</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="routes-buttons-section">
+        <div class="container routes-buttons-container">
+          <h1 class="routes-title">Маршрути</h1>
+
+          <ul class="routes-list">
+            <li class="route" data-route="firstRoute">З Харкова</li>
+            <li class="route" data-route="secondRoute">З Києва</li>
+            <li class="route" data-route="thirdRoute">Зі Львова</li>
+            <li class="route" data-route="fourthRoute">З Одеси</li>
+            <li class="route" data-route="fifthRoute">З Чернігова</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="routes-table-section">
+        <div class="container routes-table-container">
+          <h2 class="table-title">Перелік маршрутів</h2>
+          <div class="table-thumb">
+            <table class="travelRoute-table">
+              <thead>
+                <tr>
+                  <th>Напрямок</th>
+                  <th>Транспорт</th>
+                  <th>Відстань</th>
+                  <th>Вартість проїзду</th>
+                  <th>Вартість екскурсії</th>
+                  <th>Послуги гіда</th>
+                </tr>
+              </thead>
+              <tbody class="js-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="/" class="footer-logo-link">
+          <img src="./img/icon-travel.png" alt="логотип" width="64"
+        /></a>
+        <h2 class="footer-title">
+          &#169; 2023 Цей додаток був розроблений студентом групи 322г
+          Нечипоренко Андрієм
+        </h2>
+      </div>
+    </footer>
+
+    <script src="./js/routes.js" type="module"></script>
+  </body>
+</html>

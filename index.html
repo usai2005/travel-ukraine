@@ -1,46 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Таблиця</title>
-    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Ukraine travel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <section>
-      <div class="container">
-        <h1 class="routes-title">Маршрути</h1>
-
-        <ul class="routes-list">
-          <li class="route" data-route="firstRoute">З Харкова</li>
-          <li class="route" data-route="secondRoute">З Києва</li>
-          <li class="route" data-route="thirdRoute">Зі Львова</li>
-          <li class="route" data-route="fourthRoute">З Одеси</li>
-          <li class="route" data-route="fifthRoute">З Чернігова</li>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="main-nav">
+          <a href="/" class="logo-link">
+            <img src="./img/icon-travel.png" alt="логотип" width="64"
+          /></a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a class="menu-item-link current" href="./index.html">Головна</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="./routes.html">Маршрути</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link" href="./about.html">Про нас</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li><a href="tel:+3806666666666">+380 66 666 6666</a></li>
+          <li>
+            <a href="mailto:info@ukr-travel.com.ua">info@ukr-travel.com.ua</a>
+          </li>
         </ul>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <div class="container">
-        <h2 class="table-title">Перелік маршрутів за обраним напрямком</h2>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">ПОДОРОЖУЙ УКРАЇНОЮ</h1>
+          <button type="button" class="hero-btn" data-action="open-modal">
+            Реєстрація
+          </button>
+        </div>
+      </section>
+      <section class="description-section">
+        <div class="container odd-description-container">
+          <div class="odd-text">
+            <h2 class="odd-title">Чи знаєш ти що таке Україна?</h2>
+            <p class="odd-description">
+              Україна - це країна, де сплітаються століття і традиції, де кожен
+              куточок наповнений історією та красою. Це гомін карпатських лісів,
+              пульс динамічного Києва, золотисті пляжи Одеси. Україна — це
+              багатство культурного розмаїття та гостинності. Завітай, до
+              України де кожен крок — це нове відкриття, а кожен момент — це
+              враження. Проведи час у неймовірній країни України!
+            </p>
+          </div>
+          <div class="img-thumb">
+            <img
+              class="description-img odd-img"
+              src="./img/strela.jpg"
+              alt="Strela-Kharkiv" />
+          </div>
+        </div>
+      </section>
+      <section class="description-section">
+        <div class="container even-description-container">
+          <div class="even-text">
+            <h2 class="odd-title">Чому ти маєш подорожувати Україною?</h2>
+            <p class="odd-description">
+              Відкрий красу своєї країни – подорожуй Україною! Запальні Карпати,
+              таємничий Крим, витончений Львів – тобі варто побачити всі її
+              куточки. Від золотих піщаних пляжів Азовського узбережжя до
+              захоплюючих гірських пейзажів Карпат. Насолоджуйся багатогранністю
+              національної культури та гостинності. В Україні тебе чекають
+              незабутні пригоди та безліч історій для розповіді. Відчуй
+              унікальний дух рідної землі – подорожуй усіма куточками України!
+            </p>
+          </div>
+          <div class="img-thumb">
+            <img
+              class="description-img"
+              src="./img/pole-mentor-papa-skazal.jpg"
+              alt="pole" />
+          </div>
+        </div>
+      </section>
+      <section class="description-section">
+        <div class="container odd-description-container">
+          <div class="odd-text">
+            <h2 class="odd-title">Культура та традиції регіонів України.</h2>
+            <p class="odd-description">
+              Запрошуємо на подорож у світ культури та традицій різноманітних
+              регіонів України! Відкрийте для себе унікальні обряди, аутентичні
+              ремесла та смачні страви. У Закарпітті, на Поліссі, на Херсонщині
+              чи у будь-якому іншому місці України на вас чекають вражаючі
+              звичаї та яскраві фольклорні вистави. Доторкніться до
+              багатогранної національної спадщини, де кожен регіон - це нова
+              сторінка в захопливій книзі української культури. Розпочніть свою
+              подорож у світ традицій та вражень!
+            </p>
+          </div>
+          <div class="img-thumb">
+            <img class="description-img" src="./img/charlik.jpg" alt="zapor" />
+          </div>
+        </div>
+      </section>
+      <section class="feedback-section">
+        <div class="container feedback-container">
+          <h2 class="feedback-title">Відгуки подорожуючих</h2>
 
-        <table class="travelRoute-table js-travelRoute-table">
-          <thead>
-            <tr>
-              <th>Напрямок</th>
-              <th>Транспорт</th>
-              <th>Відстань</th>
-              <th>Вартість проїзду</th>
-              <th>Вартість екскурсії</th>
-              <th>Послуги гіда</th>
-            </tr>
-          </thead>
-        </table>
+          <div class="slider">
+            <ul class="slider-line"></ul>
+          </div>
+          <ul class="slider-btns">
+            <li class="control-btn js-prev-btn">Назад</li>
+            <li class="control-btn js-next-btn">Вперед</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="/" class="footer-logo-link">
+          <img src="./img/icon-travel.png" alt="логотип" width="64"
+        /></a>
+        <h2 class="footer-title">
+          &#169; 2023 Цей додаток був розроблений студентом групи 322г
+          Нечипоренко Андрієм
+        </h2>
       </div>
-    </section>
+    </footer>
 
-    <script src="./routes.js" type="module"></script>
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <div class="modal-close-btn" data-action="close-modal">
+          <img
+            src="./img/close-cross.svg"
+            alt="кнопка закриття"
+            class="close-cross" />
+        </div>
+
+        <h2 class="modal-title">Зареєструйтеся, будь ласка!</h2>
+        <form>
+          <ul class="modal-form">
+            <li class="modal-form-unit">
+              <label for="name" class="modal-form-label"> Ім'я </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="введіть ім'я"
+                class="modal-form-field" />
+            </li>
+
+            <li class="modal-form-unit">
+              <label for="mail" class="modal-form-label">Пошта</label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="введіть email"
+                class="modal-form-field" />
+            </li>
+
+            <li class="modal-form-unit">
+              <label for="password" class="modal-form-label">Пароль</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="off"
+                placeholder="введіть пароль"
+                class="modal-form-field" />
+            </li>
+          </ul>
+
+          <button type="submit" class="modal-form-submit-btn">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/slider.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/backToTop.js" type="module"></script>
   </body>
 </html>
