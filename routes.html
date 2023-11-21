@@ -9,12 +9,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/global-styles.css" />
+
+    <link rel="stylesheet" href="./css/routes-styles.css" />
   </head>
 
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container header-container">
+        <!-- Nav menu -->
+
         <nav class="main-nav">
           <a href="/" class="logo-link">
             <img src="./img/icon-travel.png" alt="логотип" width="64"
@@ -33,6 +39,9 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Contacts -->
+
         <ul class="header-contacts">
           <li><a href="tel:+3806666666666">+380 66 666 6666</a></li>
           <li>
@@ -43,6 +52,8 @@
     </header>
 
     <main>
+      <!-- Routes choosing buttons -->
+
       <section class="routes-buttons-section">
         <div class="container routes-buttons-container">
           <h1 class="routes-title">Маршрути</h1>
@@ -57,11 +68,13 @@
         </div>
       </section>
 
-      <section class="routes-table-section">
+      <!-- Detailed routes information in table -->
+
+      <section>
         <div class="container routes-table-container">
           <h2 class="table-title">Перелік маршрутів</h2>
           <div class="table-thumb">
-            <table class="travelRoute-table">
+            <table class="travel-route-table">
               <thead>
                 <tr>
                   <th>Напрямок</th>
@@ -79,7 +92,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+
+    <footer>
       <div class="container footer-container">
         <a href="/" class="footer-logo-link">
           <img src="./img/icon-travel.png" alt="логотип" width="64"
@@ -90,6 +105,8 @@
         </h2>
       </div>
     </footer>
+
+    <!-- JS scripts -->
 
     <script src="./js/routes.js" type="module"></script>
   </body>

@@ -8,16 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Ukraine travel</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/global-styles.css" />
+
+    <link rel="stylesheet" href="./css/main-page-styles.css" />
   </head>
 
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container header-container">
+        <!-- Nav menu -->
+
         <nav class="main-nav">
           <a href="/" class="logo-link">
             <img src="./img/icon-travel.png" alt="логотип" width="64"
@@ -34,6 +41,9 @@
             </li>
           </ul>
         </nav>
+
+        <!-- Contacts -->
+
         <ul class="header-contacts">
           <li><a href="tel:+3806666666666">+380 66 666 6666</a></li>
           <li>
@@ -48,11 +58,15 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">ПОДОРОЖУЙ УКРАЇНОЮ</h1>
+
           <button type="button" class="hero-btn" data-action="open-modal">
             Реєстрація
           </button>
         </div>
       </section>
+
+      <!-- Descriptions what is this application about -->
+
       <section class="description-section">
         <div class="container odd-description-container">
           <div class="odd-text">
@@ -74,6 +88,7 @@
           </div>
         </div>
       </section>
+
       <section class="description-section">
         <div class="container even-description-container">
           <div class="even-text">
@@ -96,6 +111,7 @@
           </div>
         </div>
       </section>
+
       <section class="description-section">
         <div class="container odd-description-container">
           <div class="odd-text">
@@ -116,6 +132,9 @@
           </div>
         </div>
       </section>
+
+      <!-- Feedbacks slider -->
+
       <section class="feedback-section">
         <div class="container feedback-container">
           <h2 class="feedback-title">Відгуки подорожуючих</h2>
@@ -131,7 +150,9 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- Footer -->
+
+    <footer>
       <div class="container footer-container">
         <a href="/" class="footer-logo-link">
           <img src="./img/icon-travel.png" alt="логотип" width="64"
@@ -143,6 +164,8 @@
       </div>
     </footer>
 
+    <!-- Backdrop and modal window with form-->
+
     <div class="backdrop js-backdrop">
       <div class="modal">
         <div class="modal-close-btn" data-action="close-modal">
@@ -153,6 +176,9 @@
         </div>
 
         <h2 class="modal-title">Зареєструйтеся, будь ласка!</h2>
+
+        <!-- Form -->
+
         <form>
           <ul class="modal-form">
             <li class="modal-form-unit">
@@ -193,6 +219,8 @@
         </form>
       </div>
     </div>
+
+    <!-- JS scripts -->
 
     <script src="./js/slider.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>

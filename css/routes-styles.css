@@ -1,0 +1,90 @@
+.routes-buttons-section {
+    margin: 50px 0 100px;
+}
+
+.routes-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.routes-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.routes-list {
+    display: flex;
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;
+
+    padding: 12px 0;
+
+    font-size: 16px;
+    color: #2196f3;
+    font-weight: 500;
+
+    border: 1px solid #2196f3;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    
+    transition: transform 250ms linear, background-color 250ms linear, border-color 250ms linear;
+}
+
+.route:hover {
+    color: #FFFFFF;
+    background-color: #2196f3;
+}
+
+.route:active {
+    transform: scale(1.05);
+}
+
+.route:not(:last-child) {
+    margin-right: 20px;
+}
+
+.routes-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 400px;
+}
+
+.table-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.table-thumb {
+    max-height: 205px;
+    overflow: auto;
+}
+
+.travel-route-table {
+    border-collapse: collapse;
+}
+
+.travel-route-table th,
+.travel-route-table td {
+    width: 170px;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border: 2px solid #096ec1;
+}
