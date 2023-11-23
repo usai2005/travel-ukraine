@@ -19,10 +19,22 @@
   </head>
 
   <body>
+    <!-- Language button -->
+
+    <button type="button" class="language-btn js-language-btn js-ua">UA</button>
+
+    <!-- To Top button -->
+
+    <button type="button" class="to-top-btn js-to-top-btn to-top-ua">UA</button>
+
     <!-- Header -->
 
     <header class="header">
       <div class="container header-container">
+        <!-- Clock -->
+
+        <div class="clock"></div>
+
         <!-- Nav menu -->
 
         <nav class="main-nav">
@@ -31,13 +43,32 @@
           /></a>
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-item-link current" href="./index.html">Головна</a>
+              <a
+                class="menu-item-link js-ua-language current"
+                href="./index.html"
+                >Головна</a
+              >
+              <a
+                class="menu-item-link js-en-language current"
+                href="./index.html"
+                >Main page</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-item-link" href="./routes.html">Маршрути</a>
+              <a class="menu-item-link js-ua-language" href="./routes.html"
+                >Маршрути</a
+              >
+              <a class="menu-item-link js-en-language" href="./routes.html"
+                >Routes</a
+              >
             </li>
             <li class="menu-item">
-              <a class="menu-item-link" href="./about.html">Про нас</a>
+              <a class="menu-item-link js-ua-language" href="./about.html"
+                >Про проект</a
+              >
+              <a class="menu-item-link js-en-language" href="./about.html"
+                >About project</a
+              >
             </li>
           </ul>
         </nav>
@@ -45,7 +76,7 @@
         <!-- Contacts -->
 
         <ul class="header-contacts">
-          <li><a href="tel:+3806666666666">+380 66 666 6666</a></li>
+          <li><a href="tel:+380111111111">+380 11 111 1111</a></li>
           <li>
             <a href="mailto:info@ukr-travel.com.ua">info@ukr-travel.com.ua</a>
           </li>
@@ -57,10 +88,20 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">ПОДОРОЖУЙ УКРАЇНОЮ</h1>
+          <h1 class="hero-title js-ua-language">ПОДОРОЖУЙ УКРАЇНОЮ</h1>
+          <h1 class="hero-title js-en-language">TRAVEL UKRAINE</h1>
 
-          <button type="button" class="hero-btn" data-action="open-modal">
+          <button
+            type="button"
+            class="hero-btn js-ua-language"
+            data-action="open-modal">
             Реєстрація
+          </button>
+          <button
+            type="button"
+            class="hero-btn js-en-language"
+            data-action="open-modal">
+            Registration
           </button>
         </div>
       </section>
@@ -70,14 +111,29 @@
       <section class="description-section">
         <div class="container odd-description-container">
           <div class="odd-text">
-            <h2 class="odd-title">Чи знаєш ти що таке Україна?</h2>
-            <p class="odd-description">
+            <h2 class="odd-title js-ua-language">
+              Чи знаєш ти що таке Україна?
+            </h2>
+            <h2 class="odd-title js-en-language">
+              Do you know what Ukraine is?
+            </h2>
+
+            <p class="odd-description js-ua-language">
               Україна - це країна, де сплітаються століття і традиції, де кожен
               куточок наповнений історією та красою. Це гомін карпатських лісів,
               пульс динамічного Києва, золотисті пляжи Одеси. Україна — це
               багатство культурного розмаїття та гостинності. Завітай, до
               України де кожен крок — це нове відкриття, а кожен момент — це
               враження. Проведи час у неймовірній країни України!
+            </p>
+            <p class="odd-description js-en-language">
+              Ukraine is a country where centuries and traditions intertwine,
+              where every corner is filled with history and beauty. This is the
+              hum of the Carpathian forests, the pulse of dynamic Kyiv, the
+              golden beaches of Odessa. Ukraine is a wealth of cultural
+              diversity and hospitality. Come to Ukraine, where every step is a
+              new discovery, and every moment is an impression. Spend time in
+              the incredible country of Ukraine!
             </p>
           </div>
           <div class="img-thumb">
@@ -92,15 +148,30 @@
       <section class="description-section">
         <div class="container even-description-container">
           <div class="even-text">
-            <h2 class="odd-title">Чому ти маєш подорожувати Україною?</h2>
-            <p class="odd-description">
+            <h2 class="odd-title js-ua-language">
+              Чому ти маєш подорожувати Україною?
+            </h2>
+            <h2 class="odd-title js-en-language">
+              Why should you travel Ukraine?
+            </h2>
+            <p class="odd-description js-ua-language">
               Відкрий красу своєї країни – подорожуй Україною! Запальні Карпати,
               таємничий Крим, витончений Львів – тобі варто побачити всі її
-              куточки. Від золотих піщаних пляжів Азовського узбережжя до
+              куточки. Від золотих піщаних пляжів Азовського узбережжя
               захоплюючих гірських пейзажів Карпат. Насолоджуйся багатогранністю
               національної культури та гостинності. В Україні тебе чекають
               незабутні пригоди та безліч історій для розповіді. Відчуй
               унікальний дух рідної землі – подорожуй усіма куточками України!
+            </p>
+            <p class="odd-description js-en-language">
+              Discover the beauty of your country - travel through Ukraine! The
+              fiery Carpathians, mysterious Crimea, elegant Lviv - you should
+              see all its corners. From the golden sandy beaches of the Azov
+              coast to the breathtaking mountain scenery of the Carpathians.
+              Enjoy the diversity of national culture and hospitality.
+              Unforgettable adventures and many stories to tell await you in
+              Ukraine. Feel the unique spirit of your native land - travel to
+              all corners of Ukraine!
             </p>
           </div>
           <div class="img-thumb">
@@ -115,8 +186,13 @@
       <section class="description-section">
         <div class="container odd-description-container">
           <div class="odd-text">
-            <h2 class="odd-title">Культура та традиції регіонів України.</h2>
-            <p class="odd-description">
+            <h2 class="odd-title js-ua-language">
+              Культура та традиції регіонів України.
+            </h2>
+            <h2 class="odd-title js-en-language">
+              Culture and traditions of the regions of Ukraine.
+            </h2>
+            <p class="odd-description js-ua-language">
               Запрошуємо на подорож у світ культури та традицій різноманітних
               регіонів України! Відкрийте для себе унікальні обряди, аутентичні
               ремесла та смачні страви. У Закарпітті, на Поліссі, на Херсонщині
@@ -125,6 +201,16 @@
               багатогранної національної спадщини, де кожен регіон - це нова
               сторінка в захопливій книзі української культури. Розпочніть свою
               подорож у світ традицій та вражень!
+            </p>
+            <p class="odd-description js-en-language">
+              We invite you to travel to the world of culture and traditions of
+              various regions of Ukraine! Discover unique rituals, authentic
+              crafts and delicious food. In Transcarpathia, in Polissia, in the
+              Kherson region or in any other place of Ukraine, impressive
+              customs and bright folklore performances await you. Touch the
+              multifaceted national heritage, where each region is a new page in
+              the fascinating book of Ukrainian culture. Start your journey into
+              the world of traditions and impressions!
             </p>
           </div>
           <div class="img-thumb">
@@ -137,14 +223,17 @@
 
       <section class="feedback-section">
         <div class="container feedback-container">
-          <h2 class="feedback-title">Відгуки подорожуючих</h2>
+          <h2 class="feedback-title js-ua-language">Відгуки подорожуючих</h2>
+          <h2 class="feedback-title js-en-language">Reviews of travelers</h2>
 
           <div class="slider">
             <ul class="slider-line"></ul>
           </div>
           <ul class="slider-btns">
-            <li class="control-btn js-prev-btn">Назад</li>
-            <li class="control-btn js-next-btn">Вперед</li>
+            <li class="control-btn js-ua-language js-prev-btn">Назад</li>
+            <li class="control-btn js-en-language js-prev-btn">Previous</li>
+            <li class="control-btn js-ua-language js-next-btn">Вперед</li>
+            <li class="control-btn js-en-language js-next-btn">Next</li>
           </ul>
         </div>
       </section>
@@ -157,9 +246,13 @@
         <a href="/" class="footer-logo-link">
           <img src="./img/icon-travel.png" alt="логотип" width="64"
         /></a>
-        <h2 class="footer-title">
+        <h2 class="footer-title js-ua-language">
           &#169; 2023 Цей додаток був розроблений студентом групи 322г
           Нечипоренко Андрієм
+        </h2>
+        <h2 class="footer-title js-en-language">
+          &#169; 2023 This application was developed by Andriy Nechyporenko, a
+          student of group 322g
         </h2>
       </div>
     </footer>
@@ -179,8 +272,8 @@
 
         <!-- Form -->
 
-        <form>
-          <ul class="modal-form">
+        <form method="GET">
+          <ul class="modal-form js-modal-form">
             <li class="modal-form-unit">
               <label for="name" class="modal-form-label"> Ім'я </label>
               <input
@@ -188,6 +281,7 @@
                 name="name"
                 id="name"
                 placeholder="введіть ім'я"
+                required
                 class="modal-form-field" />
             </li>
 
@@ -198,6 +292,7 @@
                 name="mail"
                 id="mail"
                 placeholder="введіть email"
+                required
                 class="modal-form-field" />
             </li>
 
@@ -209,9 +304,12 @@
                 id="password"
                 autocomplete="off"
                 placeholder="введіть пароль"
+                required
                 class="modal-form-field" />
             </li>
           </ul>
+
+          <!-- Submit button -->
 
           <button type="submit" class="modal-form-submit-btn">
             Відправити
@@ -225,5 +323,8 @@
     <script src="./js/slider.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/backToTop.js" type="module"></script>
+    <script src="./js/languageChange.js" type="module"></script>
+    <script src="./js/picturesSizeChange.js" type="module"></script>
+    <script src="./js/clock.js" type="module"></script>
   </body>
 </html>

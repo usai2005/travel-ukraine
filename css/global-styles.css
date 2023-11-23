@@ -29,13 +29,15 @@ img {
 }
 
 .container {
-    width: 1440px;
+    width: 1200px;
 
     padding: 0 30px;
-     margin: 0 auto;
+    margin: 0 auto;
 }
 
 .header-container {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,4 +139,39 @@ img {
     font-size: 14px;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .clock {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 18px;
+}
+
+.clock > p {
+    color: #212121;
+    font-weight: 500;
 }

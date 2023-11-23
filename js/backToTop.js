@@ -1,11 +1,29 @@
-//creating a toTop button (by default it's blocking in CSS via display: none;)
-const toTopBtn = document.createElement("button");
+// getting element from DOM
+const languageBtn = document.querySelector(".js-language-btn");
+const toTopBtn = document.querySelector(".js-to-top-btn");
 
-//adding class to button element
-toTopBtn.classList.add("to-top-btn");
+// //creating a toTop button (by default it's blocking in CSS via display: none;)
+// const toTopBtn = document.createElement("button");
 
-//adding text to button element
+// //adding classes to button element
+// toTopBtn.classList.add("to-top-btn");
+// toTopBtn.classList.add("to-top-ua");
+
 toTopBtn.textContent = "вгору";
+
+//adding ukr or eng text to button element
+//adding listener to language btn and start to top btn language choosing func
+languageBtn.addEventListener("click", choseToTopBtnLanguage);
+
+//language choosing func
+function choseToTopBtnLanguage(e) {
+  //if events target contains class js-ua we start one or another func
+  if (e.target.classList.contains("js-ua")) {
+    toTopBtn.textContent = "to top";
+  } else {
+    toTopBtn.textContent = "вгору";
+  }
+}
 
 //adding the button to DOM on body element
 document.body.append(toTopBtn);

@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Про нас</title>
+    <title>Про проект</title>
 
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./css/global-styles.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about-styles.css" />
   </head>
 
   <body>
@@ -23,6 +23,10 @@
 
     <header class="header">
       <div class="container header-container">
+        <!-- Clock -->
+
+        <div class="clock"></div>
+
         <!-- Nav menu -->
 
         <nav class="main-nav">
@@ -37,7 +41,9 @@
               <a class="menu-item-link" href="./routes.html">Маршрути</a>
             </li>
             <li class="menu-item">
-              <a class="menu-item-link current" href="./about.html ">Про нас</a>
+              <a class="menu-item-link current" href="./about.html "
+                >Про проект</a
+              >
             </li>
           </ul>
         </nav>
@@ -53,6 +59,97 @@
       </div>
     </header>
 
+    <main>
+      <!-- Descriptions about project -->
+
+      <section class="about-section">
+        <div class="container about-container">
+          <h1 class="about-main-title">Про проект</h1>
+          <ol class="about-list">
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Про Україну:</h2>
+
+                <p class="about-description">
+                  Ласкаво просимо до України — країни, насиченої історією та
+                  культурою. Від Карпат до Чорного моря, ми запрошуємо вас
+                  відкрити неповторність нашої країни та зануритися у багатий
+                  світ наших традицій.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Місія та Цінності:</h2>
+
+                <p class="about-description">
+                  Наша місія — розвивати та підтримувати туризм в Україні,
+                  надаючи унікальні враження та зберігаючи культурне надбання.
+                  Наші цінності — любов до різноманіття, підтримка спільнот та
+                  заохочення взаєморозуміння.
+                </p>
+              </div>
+            </li>
+
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Рекомендації та Експертні Відгуки:</h2>
+
+                <p class="about-description">
+                  Відкрийте для себе чудеса Києва, зануртеся в атмосферу Львова
+                  чи відпочиньте на сонячних пляжах Одеси. Індивідуальні поради
+                  та відгуки від наших експертів допоможуть вам створити
+                  найкращий маршрут.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Регіональні Особливості:</h2>
+
+                <p class="about-description">
+                  Кожен регіон України — це унікальний світ. Від Карпатських гір
+                  до східних степів, кожен куточок має свої традиції та
+                  неповторні місця. Поглибіться у культуру Львова, відвідайте
+                  чарівні куточки Криму чи відчуйте атмосферу Закарпаття.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Партнерство та Співпраця:</h2>
+
+                <p class="about-description">
+                  Ми пишаємося партнерствами з місцевими громадами, готелями та
+                  підприємствами. Разом ми створюємо унікальні туристичні
+                  ініціативи та сприяємо розвитку та популяризації різноманіття
+                  України.
+                </p>
+              </div>
+            </li>
+            <li class="about-list-unit">
+              <div class="about-text-container">
+                <h2 class="about-title">Контакти та Зворотній Зв'язок:</h2>
+
+                <p class="about-description">
+                  Маєте питання чи пропозиції? Зв'яжіться з нами за допомогою
+                  електронної пошти або просто подзвоніть. Ваш відгук важливий
+                  для нас, і ми завжди готові слухати.
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <!-- <div class="img-thumb">
+            <img
+              class="description-img odd-img"
+              src="./img/strela.jpg"
+              alt="Strela-Kharkiv" />
+          </div> -->
+        </div>
+      </section>
+    </main>
+
     <!-- Footer -->
 
     <footer>
@@ -66,5 +163,7 @@
         </h2>
       </div>
     </footer>
+
+    <script src="./js/clock.js" type="module"></script>
   </body>
 </html>

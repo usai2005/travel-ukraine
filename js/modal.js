@@ -1,10 +1,14 @@
 //accessing the necessary elements of the DOM tree
-const openModalBtn = document.querySelector('[data-action="open-modal"]');
+const openModalButtons = document.querySelectorAll(
+  '[data-action="open-modal"]'
+);
 const closeModalBtn = document.querySelector('[data-action="close-modal"]');
 const backdrop = document.querySelector(".js-backdrop");
 
 //adding click eventListeners to buttons and backdrop. By clicks start functions
-openModalBtn.addEventListener("click", onOpenModal);
+openModalButtons.forEach((openModalBtn) =>
+  openModalBtn.addEventListener("click", onOpenModal)
+);
 closeModalBtn.addEventListener("click", onCloseModal);
 backdrop.addEventListener("click", onBackdropClick);
 
@@ -18,7 +22,7 @@ function onOpenModal() {
 
 //function closes modal window
 function onCloseModal() {
-  //removing eventListener from ESC button/ We don't need it more
+  //removing eventListener from ESC button. We don't need it more
   window.removeEventListener("keydown", onEscKeyPress);
   //removing class from body element. Modal disappears
   document.body.classList.remove("show-modal");
